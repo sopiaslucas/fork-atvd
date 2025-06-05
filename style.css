@@ -3,6 +3,13 @@
 form{
     position:absolute/*pode mudar isso aqui, só to adicionando pra nao ficar vazio*/
 }
+/*<<<<<<< main
 h1 {
     color:rgb(95, 190, 169)
+=======
+*/
+h1{
+    color:rgb(85, 221, 57);
+    position: absolute;
+/*>>>>>>> script-1*/
 }
