@@ -1,13 +1,39 @@
 /* css simplezinho*/
 
 form{
-    position:absolute/*pode mudar isso aqui, só to adicionando pra nao ficar vazio*/
+    float: left;/*pode mudar isso aqui, só to adicionando pra nao ficar vazio*/
 }
 
 h1{
     color:rgb(53, 14, 78);
 }
 
+h3{
+    color: rgb(56, 14, 82);
+}
+
+input{
+    background-color: rgb(216, 199, 210);
+    border: 1px solid; 
+}
+
+#add{
+    font-weight: bolder;
+}
+
+#remover{
+    font-weight: bolder;
+}
+
 body{
     background-color: rgb(188, 182, 212);
+    margin-left: 20px;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 15px;
 }
