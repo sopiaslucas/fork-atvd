@@ -1,16 +1,19 @@
-//script apenas para auxiliar, é necessário criar outro.
+const lista = document.getElementById('lista');
+const add = document.getElementById('add');
+const remover = document.getElementById('remover');
+const input = document.getElementById('item');
 
-    const add = document.getElementById('add');
-    const del = document.getElementById('remover');
+add.addEventListener('click', () => {
+  if (input.value.trim() === '') return;
 
-    add.addEventListener('click', function(){
-        const novoItem = document.createElement('li');
-        novoItem.textContent = 'item novo';
-        document.getElementById('lista').appendChild(novoItem);
-    })
+  novoItem let = document.getElementById('item');
+  lista.appendChild(novoItem);
+  input.value = '';
 
-    del.addEventListener('click', ()=>{
-        const lista = document.getElementById('lista');
-        lista.removeChild(lista.lastElementChild);
-    })
+});
 
+remover.addEventListener('click', () => {
+  if (lista.lastElementChild) {
+    lista.removeChild(lista.lastElementChild);
+  }
+});
