@@ -1,19 +1,33 @@
-const lista = document.getElementById('lista');
-const add = document.getElementById('add');
-const remover = document.getElementById('remover');
-const input = document.getElementById('item');
+function adicionarElemento() {
+    const inputItem = document.querySelector("#item");
+    const texto = inputItem.value.trim();
 
-add.addEventListener('click', () => {
-  if (input.value.trim() === '') return;
+    if (texto === "") {
+        alert("Informe o que deseja comprar.");
+        return;
+    }
 
-  novoItem let = document.getElementById('item');
-  lista.appendChild(novoItem);
-  input.value = '';
+    const lista = document.getElementById("lista");
+    const novoItem = document.createElement("li");
+    novoItem.textContent = texto;
+    lista.appendChild(novoItem);
 
-});
+    inputItem.value = ""; // limpa o campo
+    inputItem.focus(); // volta o foco pro input
+}
 
-remover.addEventListener('click', () => {
-  if (lista.lastElementChild) {
-    lista.removeChild(lista.lastElementChild);
-  }
+function removerElemento() {
+    const lista = document.getElementById("lista");
+    if (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+        alert("Item removido com sucesso!");
+    } else {
+        alert("A lista já está vazia.");
+    }
+}
+
+// Conecta os botões às funções
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("add").addEventListener("click", adicionarElemento);
+    document.getElementById("remover").addEventListener("click", removerElemento);
 });
