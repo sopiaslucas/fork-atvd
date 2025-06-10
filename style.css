@@ -1,39 +1,55 @@
 /* css simplezinho*/
 
 form{
-    float: left;/*pode mudar isso aqui, só to adicionando pra nao ficar vazio*/
+    position: relative;/*pode mudar isso aqui, só to adicionando pra nao ficar vazio*/
 }
 
 h1{
-    color:rgb(53, 14, 78);
+    color:hsl(0, 100%, 89%) ;
 }
-
 h3{
-    color: rgb(56, 14, 82);
+    color: hsl(0, 100%, 89%);
+    margin-right: 330px;
 }
 
-input{
-    background-color: rgb(216, 199, 210);
-    border: 1px solid; 
+ul{
+    margin-right: 330px;
+    list-style: none;
+    color: #ffe7e7;
+}
+
+ul li:before {
+    content: "→";
+    padding: 5px;
+}
+
+label{
+    color: #ffe7e7;
+}
+
+p{
+    color: #ffe7e7;
 }
 
 #add{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 #remover{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 body{
-    background-color: rgb(188, 182, 212);
-    margin-left: 20px;
+    background-color: rgb(131, 46, 50);
+    text-align: center;
+    margin-top: 100px;
 }
 
 img{
-    height: 250px;
-    width: 250px;
-    border-radius: 50px;
-    float: left;
-    margin-right: 15px;
+    height: 230px;
+    width: 260px;
+    border-radius: 40px;
+    align-items: center;
+    border: solid 2px;
+    color:rgb(46, 38, 32)
 }
